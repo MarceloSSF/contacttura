@@ -8,5 +8,5 @@
 <img src="https://img.shields.io/static/v1?label=lombok&message=library&color=green&style=for-the-badge&logo=SPRING"/>
 
 ### Participantes 
-|Marcelo Soares|soaresmarcelo94@gmail.com
+|Marcelo Soares|soaresmarcelo94@gmail.com|
 |Fuctura Tecnologia|-
