@@ -1,0 +1,23 @@
+<body>
+    <!-- Navegação -->
+    <nav class="navBar">
+        <!-- Responsividade para Mobile -->
+        <span class="navBar-toggle" id="toggle-action">
+          <mat-icon>menu</mat-icon>
+        </span>
+    
+        <a class="logo">Logo</a>
+
+        <ul class="main-nav" id="desktop-menu">
+            <li>
+                <a routerLink="/contacts-list" class="nav-links">Contatos</a>
+            </li>
+            <li *ngIf="admin != 'false'">
+                <a routerLink="/user-list" class="nav-links">Usuários</a>
+            </li>
+            <li>
+                <a (click)="logout()" class="nav-links">Logout</a>
+            </li>
+        </ul>
+    </nav>
+</body>

@@ -1,0 +1,46 @@
+<app-navigation-bar></app-navigation-bar>
+
+<section>
+    <div class="title_users">
+        <h1>Usuários</h1>
+    </div>
+    <div class="button_new_users button_primary_color">
+        <button mat-raised-button color="primary" routerLink="/user-create-edit" class="button-add-position">Novo Usuário</button>
+    </div>
+</section>
+
+<section>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Admin</th>
+                    <th>menu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of collection.data | paginate: config">
+                    <th data-label="Username">{{item.username}}</th>
+                    <td data-label="Nome">{{item.name}}</td>
+                    <td data-label="Permissão">{{item.admin}}</td>
+                    <td data-label="Menu">
+                        <div class="button_check_color">
+                            <button class="buttons-first-position" mat-raised-button color="warn">Excluir</button>
+                            <button mat-raised-button color="accent">Editar</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination-position">
+            <pagination-controls [maxSize]="maxSize" 
+                                 [directionLinks]="directionLinks" 
+                                 [responsive]="responsive" 
+                                 [previousLabel]="labels.previousLabel" 
+                                 [nextLabel]="labels.nextLabel" (pageChange)="onPageChange($event)"></pagination-controls>
+        </div>
+    </div>
+</section>
+

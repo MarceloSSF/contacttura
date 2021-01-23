@@ -1,0 +1,53 @@
+.title-new-users{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+} 
+
+.example-full-width {
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 10px;
+}
+
+.grid-container-button{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+button{
+    width: 130px;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;   
+}
+
+@media screen and (max-width:680px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+}
